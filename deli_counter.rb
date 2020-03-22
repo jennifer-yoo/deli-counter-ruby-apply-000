@@ -10,6 +10,6 @@ end
 
 def take_a_number(katz_deli, last_person)
   number = katz_deli.count(last_person)
-  number +=
-    puts "Welcome, #{last_person}. You are number #{number} in line."
+  final_number = number + 1
+    puts "Welcome, #{last_person}. You are number #{final_number} in line."
 end
