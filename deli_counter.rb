@@ -10,6 +10,6 @@ end
 
 def take_a_number(katz_deli, last_person)
   katz_deli.push(last_person)
-  number = katz_deli.index(last_person)+1
-    puts "Welcome, #{last_person}. You are number #{katz_deli.index(last_person)} in line."
+  number = katz_deli.index(last_person)
+    puts "Welcome, #{last_person}. You are number #{number+1} in line."
 end
