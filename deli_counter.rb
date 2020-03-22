@@ -1,9 +1,9 @@
-def line(deli)
-  if deli == []
+def line(katz_deli)
+  if katz_deli == []
     puts "The line is currently empty."
   else
     display = "The line is currently:"
-    deli.each_with_index {|name, index| display += " #{index+1}. #{name}" }
+    katz_deli.each_with_index {|name, index| display += " #{index+1}. #{name}" }
       puts "#{display}"
   end
 end
@@ -15,5 +15,9 @@ def take_a_number(katz_deli, last_person)
 end
 
 def now_serving(katz_deli)
-  
+  if katz_deli == []
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{katz_deli.fetch(0)}."
+    katz_deli.delete_at(0)
 end
