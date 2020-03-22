@@ -9,5 +9,5 @@ def line(deli)
 end
 
 def take_a_number(katz_deli, last_person)
-  puts "Welcome, #{last_person}. You are number #{katz_deli.length} in line."
+  puts "Welcome, #{last_person}. You are number #{katz_deli.length+1} in line."
 end
