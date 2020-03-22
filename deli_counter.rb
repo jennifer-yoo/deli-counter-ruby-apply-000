@@ -9,6 +9,6 @@ def line(deli)
 end
 
 def take_a_number(katz_deli, last_person)
-  number = katz_deli.length
+  number = katz_deli.length + 1
     puts "Welcome, #{last_person}. You are number #{number} in line."
 end
